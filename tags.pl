@@ -23,7 +23,6 @@ print <<'HEAD';
 <title>Notes</title>
 <style>
 .note {
-    display:none;
     width: 600px;
 }
 </style>
