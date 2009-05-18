@@ -10,6 +10,7 @@ print <<'HEAD';
 <style>
 .note {
     display:none;
+    width: 600px;
 }
 </style>
 <script src="jquery-1.3.2.min.js"></script>
