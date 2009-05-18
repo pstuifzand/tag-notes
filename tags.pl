@@ -49,6 +49,9 @@ while (<>) {
     $note =~ s/\s+$//;
 
     my @tags = $note =~ m/#(\w+)/g;
+
+    $note =~ s{#(\w+)}{<a href="#" onclick="show_notes('$1')">#$1</a> }g;
+
     print "<p class='note " . join(' ',@tags) . q{'>} . $note . '</p>' . "\n";
 
     push @all_tags, @tags;
