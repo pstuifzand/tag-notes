@@ -43,14 +43,25 @@ HEAD
 
 local $/ = '';
 
+my @all_tags;
 while (<>) {
     my $note = $_;
     $note =~ s/\s+$//;
 
     my @tags = $note =~ m/#(\w+)/g;
     print "<p class='note " . join(' ',@tags) . q{'>} . $note . '</p>' . "\n";
+
+    push @all_tags, @tags;
 }
 
+my %tags;
+for my $tag (@all_tags) {
+    $tags{$tag}++;
+}
+
+for my $tag (sort keys %tags) {
+    print qq{<a href="#" onclick="show_notes('$tag')">$tag</a> };
+}
 
 print <<"FOOT";
 </body>
