@@ -92,6 +92,11 @@ tags.pl - generate a HTML file for easy searching
 
 =head1 DESCRIPTION
 
+=head1 WEBSITE
+
+The newest version of this program can be found at:
+http://github.com/pstuifzand/tag-notes
+
 =head1 AUTHOR
 
 Peter Stuifzand  peter.stuifzand@gmail.com
