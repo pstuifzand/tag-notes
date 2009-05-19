@@ -25,6 +25,9 @@ print <<'HEAD';
 .note {
     width: 600px;
 }
+.note a {
+    font-size:0.8em;
+}
 </style>
 <script src="jquery-1.3.2.min.js"></script>
 <script>
