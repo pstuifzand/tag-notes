@@ -1,0 +1,15 @@
+Notetaking with tags
+====================
+
+This program creates a HTML files from a notes file with a tag.
+
+tags.pl          generates the HTML file
+tag_watcher.pl   watches the notes file and calls tags.pl when the file changes
+
+
+
+AUTHOR
+
+Peter Stuifzand <peter.stuifzand@gmail.com>
+
+
